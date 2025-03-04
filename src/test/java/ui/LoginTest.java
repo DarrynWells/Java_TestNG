@@ -14,7 +14,7 @@ public class LoginTest extends DataSetups {
 
     @AfterTest
     public void afterTest() {
-        System.out.println("This executes after the test test");
+        System.out.println("This executes after the test");
     }
 
     @BeforeMethod
@@ -44,6 +44,11 @@ public class LoginTest extends DataSetups {
 //        softAssert.assertAll();
     }
 
+    @Test(priority = 3)
+    @Parameters({"browser"}) // Coming from runner.xml
+    public void browserType(String browserType) {
+        System.out.println("Browser used is: " + browserType);
+    }
 
 
 }

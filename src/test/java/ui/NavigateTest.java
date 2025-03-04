@@ -3,7 +3,7 @@ package ui;
 import org.testng.annotations.Test;
 
 @Test(groups = "navigation")
-public class NavigatTest {
+public class NavigateTest {
 
     @Test(priority = 1, groups = {"regression", "smoke"})
     public void navigateHomePage() {

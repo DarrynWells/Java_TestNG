@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Login Suite">
-	<test verbose="2"
-	      preserve-order="true"
-	      name="C:/Users/darry/Documents/Coding/Java_TestNG/src/test/java/ui/LoginTest.java">
-		<classes>
-			<class name="ui.LoginTest">
-<!--				<methods>-->
-<!--					<include name="loginTest"/>-->
-<!--					<include name="logoutTest"/>-->
-<!--				</methods>-->
-			</class>
-		</classes>
-	</test>
+<suite name="All Test Suite">
+    <test verbose="2"
+          preserve-order="true"
+          name="C:/Users/darry/Documents/Coding/Java_TestNG/src/test/java/ui/ListenerTest.java">
+        <classes>
+            <class name="ui.ListenerTest">
+                <methods>
+                    <include name="testUsingListener"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>
